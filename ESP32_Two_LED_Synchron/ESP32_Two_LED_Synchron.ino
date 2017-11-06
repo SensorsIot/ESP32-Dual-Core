@@ -55,6 +55,8 @@ void setup() {
 
   baton = xSemaphoreCreateMutex();
 
+// A viewer suggested to use :     &codeForTask1, because his ESP crashed
+
   xTaskCreatePinnedToCore(
     codeForTask1,
     "led1Task",
